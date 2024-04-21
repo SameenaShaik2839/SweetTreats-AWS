@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sweet Treats Bakery</title>
+<style>
+body {
+background-color: #fff8e7;
+background-image: linear-gradient(90deg, #fff8e7 25%, transparent 25%, transparent 50%, #fff8e7 50%, #fff8e7 75%, transparent 75%, transparent);
+background-size: 50px 50px;
+}
+
+header {
+background-color: white;
+padding: 20px;
+text-align: center;
+}
+
+header a {
+color: brown;
+margin: 0 10px;
+}
+
+#order-btn {
+float: right;
+}
+
+main {
+max-width: 1000px;
+margin: 0 auto;
+padding: 30px;
+}
+
+.item {
+float: left;
+width: 30%;
+margin: 1%;
+padding: 1%;
+border: 1px solid brown;
+}
+
+.item img {
+width: 100%;
+}
+
+footer {
+background-color: brown;
+color: white;
+padding: 20px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="/">Home</a>
+<a href="/menu">Menu</a>
+<a href="/story">Our Story</a>
+<a href="/visit">Visit Us</a>
+<button id="order-btn">Order Online</button>
+</header>
+
+<main>
+
+<div class="item">
+<img src="cupcake.jpg">
+<h3>Vanilla Cupcakes</h3>
+<p>$12/dozen</p>
+</div>
+
+<div class="item">
+<img src="scone.jpg">
+<h3>Cranberry Scones</h3>
+<p>$10/half dozen</p>
+</div>
+
+<div class="item">
+<img src="cookie.jpg">
+<h3>Chocolate Chip Cookies</h3>
+<p>$8/dozen</p>
+</div>
+
+</main>
+
+<footer>
+<p>123 Sweet St.</p>
+<p>Small Town, CA 12345</p>
+<p>555-123-4567</p>
+<p>
+<script>
+function handleSubmit(event) {
+event.preventDefault();
+// code to validate and send email
+}
+</script>
+
+<form onsubmit="handleSubmit(event)">
+<input type="email" placeholder="Your email">
+<button type="submit">Subscribe</button>
+</form>
+
+</footer>
+
+</body>
+</html>
